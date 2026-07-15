@@ -44,15 +44,24 @@ document.querySelectorAll("details").forEach((detail) => {
 });
 
 const fixedCtaBar = document.querySelector(".fixed-cta-bar");
+const fixedCtaTrigger = document.querySelector(
+  "[data-fixed-cta-center-trigger]"
+);
 
-if (fixedCtaBar) {
+if (fixedCtaBar && fixedCtaTrigger) {
   const updateFixedCtaVisibility = () => {
-    const shouldShow = window.scrollY > 1200;
+    const triggerTop = fixedCtaTrigger.getBoundingClientRect().top;
+    const shouldShow = triggerTop <= window.innerHeight;
+
     fixedCtaBar.classList.toggle("is-visible", shouldShow);
   };
 
   updateFixedCtaVisibility();
-  window.addEventListener("scroll", updateFixedCtaVisibility, { passive: true });
+
+  window.addEventListener("scroll", updateFixedCtaVisibility, {
+    passive: true,
+  });
+
   window.addEventListener("resize", updateFixedCtaVisibility);
 }
 const customerVoiceTrack = document.querySelector(".customer-voice-scroll-track");
