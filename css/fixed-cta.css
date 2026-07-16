@@ -61,6 +61,16 @@
   border-radius: 12px;
 }
 
+.customer-voice-transcript {
+  display: none;
+}
+
+.customer-voice-scroll-track figure > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .footer {
   padding: 0;
   color: #ffffff;
