@@ -14,43 +14,165 @@
 
 .contact-form-section {
   scroll-margin-top: 18px;
-  padding-bottom: 116px;
-  background: linear-gradient(180deg, #eef8ff 0%, #ffffff 100%);
+  padding: 38px 8px 24px;
+  background: #dff6ff;
 }
 
 .contact-form-section .section-head {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 .contact-form-section .section-head h2 {
-  color: #004b9b;
+  color: #005bb8;
+  font-size: clamp(32px, 8.4vw, 42px);
+  line-height: 1.12;
+  font-weight: 950;
+}
+
+.contact-form-section .section-sub {
+  display: block;
+  margin-top: 10px;
+  color: #334155;
+  line-height: 1.7;
 }
 
 .formmailer-panel {
-  padding: 12px;
-  background: #ffffff;
-  border: 2px solid #0b73d9;
-  border-radius: 10px;
-  box-shadow: 0 10px 22px rgba(7, 77, 153, 0.13);
-}
-
-.formmailer-panel::before {
-  display: block;
-  margin-bottom: 10px;
-  padding: 9px 10px;
-  color: #004b9b;
-  font-size: 14px;
-  font-weight: 950;
-  line-height: 1.45;
-  content: "メールでのご相談はこちら";
-  text-align: center;
-  background: #fff7bf;
-  border: 1px solid #ffd34d;
-  border-radius: 8px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .formmailer-embed {
-  min-height: 520px;
+  min-height: 340px;
+}
+
+.formmailer-embed iframe {
+  display: block;
+  width: 100%;
+  min-height: 340px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 12px;
+}
+
+.footer {
+  padding: 0;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(35, 153, 226, 0.38) 0%, rgba(16, 107, 177, 0.18) 34%, rgba(0, 69, 134, 0) 68%),
+    linear-gradient(135deg, #004080 0%, #0060a8 48%, #004080 100%);
+}
+
+.footer-company-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  aspect-ratio: 1665 / 945;
+  max-width: 1665px;
+  margin: 0 auto;
+  padding: 5.2% 2.4% 4.2%;
+}
+
+.footer-company-text h2 {
+  margin: 0 0 6.6%;
+  font-size: 32px;
+  font-weight: 950;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.footer-aircon-copy {
+  margin-bottom: 6%;
+}
+
+.footer-aircon-copy p {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: 850;
+  line-height: 1.22;
+}
+
+.footer-aircon-copy .footer-lead {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 38px;
+  font-weight: 950;
+  line-height: 1.2;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.92);
+}
+
+.footer-other-services h3 {
+  display: inline-block;
+  margin: 0 0 20px;
+  font-size: 38px;
+  font-weight: 950;
+  line-height: 1.16;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.92);
+}
+
+.footer-other-services ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 48px;
+  margin: 0;
+  padding: 0 0 0 9%;
+  list-style-position: outside;
+}
+
+.footer-other-services li {
+  padding-left: 4px;
+  font-size: 34px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+@media (max-width: 700px) {
+  .footer-company-text {
+    padding: 5.2% 2.4% 4.2%;
+  }
+
+  .footer-company-text h2 {
+    margin-bottom: 6.2%;
+    font-size: 11px;
+  }
+
+  .footer-aircon-copy {
+    margin-bottom: 5.6%;
+  }
+
+  .footer-aircon-copy p {
+    margin-bottom: 3px;
+    font-size: 10px;
+  }
+
+  .footer-aircon-copy .footer-lead {
+    margin-bottom: 5px;
+    font-size: 13px;
+    border-bottom-width: 1px;
+  }
+
+  .footer-other-services h3 {
+    margin-bottom: 6px;
+    font-size: 13px;
+    border-bottom-width: 1px;
+  }
+
+  .footer-other-services ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px 16px;
+    padding-left: 9%;
+  }
+
+  .footer-other-services li {
+    padding-left: 1px;
+    font-size: 11px;
+  }
 }
 
 .fixed-cta-bar.fixed-phone-banner {
