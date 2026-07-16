@@ -12,6 +12,17 @@
   pointer-events: none;
 }
 
+.header-mail-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 42%;
+  z-index: 3;
+  display: block;
+  width: 15%;
+  outline-offset: -3px;
+}
+
 .contact-form-section {
   scroll-margin-top: 18px;
   padding: 38px 8px 24px;
