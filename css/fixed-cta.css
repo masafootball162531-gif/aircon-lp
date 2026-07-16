@@ -309,6 +309,19 @@
     -2px -2px 0 #ff0000;
 }
 
+.fixed-mail-badge strong {
+  -webkit-text-stroke-width: 3px;
+  text-shadow:
+    3px 0 0 #ff0000,
+    -3px 0 0 #ff0000,
+    0 3px 0 #ff0000,
+    0 -3px 0 #ff0000,
+    2px 2px 0 #ff0000,
+    -2px 2px 0 #ff0000,
+    2px -2px 0 #ff0000,
+    -2px -2px 0 #ff0000;
+}
+
 .fixed-phone-banner .fixed-mail {
   position: relative;
   display: grid;
