@@ -12,6 +12,47 @@
   pointer-events: none;
 }
 
+.contact-form-section {
+  scroll-margin-top: 18px;
+  padding-bottom: 116px;
+  background: linear-gradient(180deg, #eef8ff 0%, #ffffff 100%);
+}
+
+.contact-form-section .section-head {
+  margin-bottom: 14px;
+}
+
+.contact-form-section .section-head h2 {
+  color: #004b9b;
+}
+
+.formmailer-panel {
+  padding: 12px;
+  background: #ffffff;
+  border: 2px solid #0b73d9;
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(7, 77, 153, 0.13);
+}
+
+.formmailer-panel::before {
+  display: block;
+  margin-bottom: 10px;
+  padding: 9px 10px;
+  color: #004b9b;
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 1.45;
+  content: "メールでのご相談はこちら";
+  text-align: center;
+  background: #fff7bf;
+  border: 1px solid #ffd34d;
+  border-radius: 8px;
+}
+
+.formmailer-embed {
+  min-height: 520px;
+}
+
 .fixed-cta-bar.fixed-phone-banner {
   align-items: stretch;
   gap: 6px;
@@ -87,10 +128,12 @@
 
 .fixed-mail-badge {
   top: -36px;
-  left: 50%;
+  left: 47%;
   padding-right: 8px;
   padding-left: 8px;
-  font-size: clamp(12px, 3vw, 15px);
+  min-width: 92px;
+  max-width: calc(100vw - 18px);
+  font-size: clamp(11px, 2.7vw, 13px);
   transform: translateX(-50%);
 }
 
@@ -241,7 +284,11 @@
 
   .fixed-mail-badge {
     top: -34px;
-    font-size: 10px;
+    left: 47%;
+    min-width: 82px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 9px;
   }
 
   .fixed-phone-banner .fixed-call {
