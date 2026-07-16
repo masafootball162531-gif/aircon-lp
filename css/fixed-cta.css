@@ -271,7 +271,7 @@
 
 .fixed-mail-badge {
   top: -34px;
-  left: 54%;
+  left: 50%;
   padding-right: 8px;
   padding-left: 8px;
   min-width: 92px;
@@ -294,6 +294,19 @@
     -2px 0 0 #ff0000,
     0 2px 0 #ff0000,
     0 -2px 0 #ff0000;
+}
+
+.fixed-call-badge strong {
+  -webkit-text-stroke-width: 3px;
+  text-shadow:
+    3px 0 0 #ff0000,
+    -3px 0 0 #ff0000,
+    0 3px 0 #ff0000,
+    0 -3px 0 #ff0000,
+    2px 2px 0 #ff0000,
+    -2px 2px 0 #ff0000,
+    2px -2px 0 #ff0000,
+    -2px -2px 0 #ff0000;
 }
 
 .fixed-phone-banner .fixed-mail {
@@ -430,7 +443,7 @@
 
   .fixed-mail-badge {
     top: -33px;
-    left: 55%;
+    left: 51%;
     min-width: 82px;
     padding-right: 5px;
     padding-left: 5px;
