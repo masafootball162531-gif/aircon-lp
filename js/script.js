@@ -89,7 +89,7 @@ if (customerVoiceTrack && customerVoiceDots.length) {
     button.addEventListener("click", () => {
       const slideWidth = customerVoiceTrack.clientWidth || 1;
       const currentIndex = Math.round(customerVoiceTrack.scrollLeft / slideWidth);
-      const nextIndex = Math.min(currentIndex + 1, customerVoiceDots.length - 1);
+      const nextIndex = (currentIndex + 1) % customerVoiceDots.length;
 
       customerVoiceTrack.scrollTo({
         left: slideWidth * nextIndex,
