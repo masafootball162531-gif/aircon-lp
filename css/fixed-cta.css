@@ -287,6 +287,8 @@
   color: #ffffff;
   font-size: 1.45em;
   line-height: 0.8;
+  -webkit-text-stroke: 2px #ff0000;
+  paint-order: stroke fill;
   text-shadow:
     2px 0 0 #ff0000,
     -2px 0 0 #ff0000,
