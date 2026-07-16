@@ -1,4 +1,4 @@
-const ctaLinks = document.querySelectorAll(".tel-cta, .line-cta");
+const ctaLinks = document.querySelectorAll(".tel-cta, .line-cta, .mail-cta");
 
 const currentTimeElements = document.querySelectorAll("[data-current-time]");
 
@@ -21,7 +21,11 @@ ctaLinks.forEach((link) => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "lp_cta_click",
-      ctaType: link.classList.contains("tel-cta") ? "tel" : "line",
+      ctaType: link.classList.contains("tel-cta")
+        ? "tel"
+        : link.classList.contains("mail-cta")
+          ? "mail"
+          : "line",
       ctaArea: link.classList.contains("fixed-cta")
         ? "fixed"
         : link.classList.contains("fv-cta")

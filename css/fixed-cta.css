@@ -1,0 +1,233 @@
+.fixed-mail::before {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: -70%;
+  width: 38%;
+  height: 170%;
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.15) 36%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.15) 64%, transparent 100%);
+  transform: rotate(12deg);
+  animation: cta-shine 3s ease-in-out infinite;
+  animation-delay: 0.4s;
+  pointer-events: none;
+}
+
+.fixed-cta-bar.fixed-phone-banner {
+  align-items: stretch;
+  gap: 6px;
+  padding: 39px 8px calc(8px + env(safe-area-inset-bottom));
+  background: transparent;
+  border-top: 0;
+  box-shadow: none;
+}
+
+.fixed-phone-banner .fixed-call {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: center;
+  flex: 1 1 75%;
+  width: auto;
+  min-width: 0;
+  min-height: 78px;
+  padding: 12px 7px 9px 5px;
+  overflow: visible;
+  background: linear-gradient(180deg, #ff171f 0%, #f20712 53%, #d70000 100%);
+  border: 3px solid #e6000b;
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.25) inset,
+    0 -8px 0 rgba(160, 0, 0, 0.14) inset,
+    0 10px 24px rgba(175, 0, 0, 0.32);
+}
+
+.fixed-call-badge,
+.fixed-mail-badge {
+  position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 3px 10px 4px;
+  color: #fff200;
+  font-weight: 950;
+  line-height: 1;
+  white-space: nowrap;
+  width: max-content;
+  background: #003f91;
+  border: 3px solid #071427;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.22);
+  isolation: isolate;
+  pointer-events: none;
+}
+
+.fixed-call-badge::after,
+.fixed-mail-badge::after {
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  z-index: -1;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background: #003f91;
+  border-right: 3px solid #071427;
+  border-bottom: 3px solid #071427;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.fixed-call-badge {
+  top: -36px;
+  left: 50%;
+  min-width: 166px;
+  font-size: clamp(14px, 3.5vw, 18px);
+  transform: translateX(-50%);
+}
+
+.fixed-mail-badge {
+  top: -36px;
+  left: 50%;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: clamp(12px, 3vw, 15px);
+  transform: translateX(-50%);
+}
+
+.fixed-call-badge strong,
+.fixed-mail-badge strong {
+  display: inline;
+  margin-right: 2px;
+  color: #ffffff;
+  font-size: 1.45em;
+  line-height: 0.8;
+  text-shadow:
+    2px 0 0 #ff0000,
+    -2px 0 0 #ff0000,
+    0 2px 0 #ff0000,
+    0 -2px 0 #ff0000;
+}
+
+.fixed-phone-banner .fixed-mail {
+  position: relative;
+  display: grid;
+  flex: 0 0 23%;
+  min-width: 74px;
+  min-height: 78px;
+  overflow: visible;
+  place-items: center;
+  padding: 17px 5px 8px;
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(180deg, #40d654 0%, #14ad33 48%, #078b25 100%);
+  border: 3px solid #0d7f20;
+  border-radius: 16px;
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.35) inset,
+    0 -7px 0 rgba(0, 98, 27, 0.18) inset,
+    0 10px 22px rgba(0, 104, 32, 0.25);
+  pointer-events: auto;
+}
+
+.fixed-mail-icon {
+  display: grid;
+  width: 54px;
+  height: 44px;
+  place-items: center;
+  color: transparent;
+  background: linear-gradient(180deg, #5ee65e 0%, #18b239 54%, #079124 100%);
+  border: 2px solid rgba(255, 255, 255, 0.42);
+  border-radius: 8px;
+  font-size: 0;
+  font-weight: 950;
+  line-height: 1;
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.24) inset,
+    0 -4px 0 rgba(0, 98, 27, 0.2) inset,
+    0 2px 6px rgba(0, 68, 18, 0.26);
+  transform: translateY(-4px);
+}
+
+.fixed-mail-icon::before {
+  display: block;
+  width: 42px;
+  height: 30px;
+  content: "";
+  background: #ffffff;
+  filter: drop-shadow(0 2px 0 rgba(0, 68, 18, 0.2));
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 56'%3E%3Cpath d='M8 8h64v40H8z' fill='none' stroke='black' stroke-width='8' stroke-linejoin='round'/%3E%3Cpath d='M10 10l30 24 30-24M10 46l22-18M70 46L48 28' fill='none' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.fixed-mail-label {
+  display: block;
+  color: #fff200;
+  font-size: 13px;
+  font-weight: 950;
+  line-height: 1.12;
+  text-shadow: 0 2px 0 rgba(0, 68, 18, 0.22);
+}
+
+.fixed-banner-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  color: transparent;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.fixed-banner-icon::before {
+  display: block;
+  width: 42px;
+  height: 42px;
+  content: "";
+  background: #ffffff;
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.18));
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M46.7 56.5c-7.6 0-17.1-4.6-25.2-12.7C10.5 32.8 6.1 19.4 11.7 13.8l5.1-5.1c1.5-1.5 4-1.4 5.4.2l7.3 8.2c1.2 1.4 1.3 3.4.2 4.9l-3.4 4.7c-.6.8-.5 1.9.2 2.6l8.2 8.2c.7.7 1.8.8 2.6.2l4.7-3.4c1.5-1.1 3.5-1 4.9.2l8.2 7.3c1.6 1.4 1.7 3.9.2 5.4l-5.1 5.1c-1 .9-2.2 1.5-3.5 1.5z'/%3E%3Cpath d='M43 7c7.8 1.5 12.5 6.2 14 14' fill='none' stroke='black' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M42 18c2.8.8 4.2 2.2 5 5' fill='none' stroke='black' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.fixed-phone-banner .fixed-banner-title {
+  color: var(--white);
+  max-width: 100%;
+  font-size: clamp(12px, 3.2vw, 16px);
+  font-weight: 950;
+  line-height: 1.05;
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+
+.fixed-phone-banner .fixed-call .fixed-banner-body > strong {
+  display: block;
+  max-width: 100%;
+  color: var(--white);
+  font-size: clamp(22px, 6vw, 28px);
+  font-weight: 950;
+  line-height: 0.95;
+  letter-spacing: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.24);
+}
+
+.fixed-phone-banner .fixed-call small {
+  font-size: clamp(10px, 2.5vw, 13px);
+}
+
+@media (max-width: 374px) {
+  .fixed-cta-bar.fixed-phone-banner {
+    gap: 5px;
+    padding-top: 43px;
+    padding-rightˆœÂˆY[™Ë[YˆœÂˆB‚ˆ™š^YXØ[X˜YÙHÂˆÜˆLÍÂˆZ[‹]ÚYˆMœÂˆ›Û\Ú^™NˆLÜÂˆB‚ˆ™š^Y[XZ[X˜YÙHÂˆÜˆLÍÂˆ›Û\Ú^™NˆLÂˆB‚ˆ™š^Y\Û™KX˜[›™\ˆ™š^YXØ[ÂˆÜšY][\]KXÛÛ[[œÎˆœZ[›X^
+YœŠNÂˆ›^X˜\Ú\ÎˆÌÉNÂˆZ[‹ZZYÚˆÍœÂˆY[™ÎˆLœ\ÂˆB‚ˆ™š^Y\Û™KX˜[›™\ˆ™š^Y[XZ[Âˆ›^X˜\Ú\ÎˆINÂˆZ[‹]ÚYˆÂˆZ[‹ZZYÚˆÍœÂˆB‚ˆ™š^Y[XZ[ZXÛÛˆÂˆÚYˆÂˆZYÚˆÂˆB‚ˆ™š^Y[XZ[ZXÛÛ˜™Y›Ü™HÂˆÚYˆÍÜÂˆZYÚˆÜÂˆB‚ˆ™š^Y[XZ[[X™[ˆ™š^Y\Û™KX˜[›™\ˆ™š^YX˜[›™\‹]]HÂˆ›Û\Ú^™NˆLœÂˆB‚ˆ™š^YX˜[›™\‹ZXÛÛˆÂˆÚYˆÎÂˆZYÚˆÎÂˆB‚ˆ™š^YX˜[›™\‹ZXÛÛ˜™Y›Ü™HÂˆÚYˆÍœÂˆZYÚˆÍœÂˆB‚ˆ™š^Y\Û™KX˜[›™\ˆ™š^YXØ[™š^YX˜[›™\‹X›ÙHˆİ›Û™ÈÂˆ›Û\Ú^™NˆŒ\ÂˆB‚ˆ™š^Y\Û™KX˜[›™\ˆ™š^YXØ[ÛX[Âˆ›Û\Ú^™Nˆ\ÂˆBŸB
