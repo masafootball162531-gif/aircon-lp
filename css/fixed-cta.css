@@ -297,17 +297,17 @@
 }
 
 .fixed-call-badge strong {
-  color: #ff0000;
-  -webkit-text-stroke: 2px #ffffff;
+  color: #ffffff;
+  -webkit-text-stroke: 3px #ff0000;
   text-shadow:
-    3px 0 0 #071427,
-    -3px 0 0 #071427,
-    0 3px 0 #071427,
-    0 -3px 0 #071427,
-    2px 2px 0 #071427,
-    -2px 2px 0 #071427,
-    2px -2px 0 #071427,
-    -2px -2px 0 #071427;
+    3px 0 0 #ff0000,
+    -3px 0 0 #ff0000,
+    0 3px 0 #ff0000,
+    0 -3px 0 #ff0000,
+    2px 2px 0 #ff0000,
+    -2px 2px 0 #ff0000,
+    2px -2px 0 #ff0000,
+    -2px -2px 0 #ff0000;
 }
 
 .fixed-mail-badge strong {
