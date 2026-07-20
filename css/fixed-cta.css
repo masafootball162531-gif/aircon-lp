@@ -208,20 +208,20 @@
 .fixed-phone-banner .fixed-call {
   position: relative;
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-columns: 46px minmax(0, 1fr);
   align-items: center;
   flex: 1 1 75%;
   width: auto;
   min-width: 0;
   min-height: 78px;
-  padding: 12px 7px 9px 5px;
+  padding: 12px 7px 9px 7px;
   overflow: visible;
-  background: linear-gradient(180deg, #ff171f 0%, #f20712 53%, #d70000 100%);
-  border: 3px solid #e6000b;
+  background: linear-gradient(180deg, #ff6262 0%, #ff171f 34%, #e60012 68%, #b90000 100%);
+  border: 3px solid #ff2f3f;
   box-shadow:
-    0 2px 0 rgba(255, 255, 255, 0.25) inset,
-    0 -8px 0 rgba(160, 0, 0, 0.14) inset,
-    0 10px 24px rgba(175, 0, 0, 0.32);
+    0 3px 0 rgba(255, 255, 255, 0.35) inset,
+    0 -9px 0 rgba(120, 0, 0, 0.22) inset,
+    0 10px 24px rgba(175, 0, 0, 0.36);
   animation: fixed-cta-button-float 1.45s ease-in-out infinite;
   will-change: transform;
 }
@@ -415,13 +415,15 @@
   display: block;
   max-width: 100%;
   color: var(--white);
-  font-size: clamp(22px, 6vw, 28px);
+  font-size: clamp(25px, 6.8vw, 33px);
   font-weight: 950;
-  line-height: 0.95;
+  line-height: 1;
   letter-spacing: 0;
   overflow: hidden;
   white-space: nowrap;
-  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.24);
+  text-shadow:
+    0 3px 0 rgba(0, 0, 0, 0.24),
+    0 0 8px rgba(255, 255, 255, 0.24);
 }
 
 .fixed-phone-banner .fixed-call small {
@@ -449,10 +451,10 @@
   }
 
   .fixed-phone-banner .fixed-call {
-    grid-template-columns: 42px minmax(0, 1fr);
+    grid-template-columns: 38px minmax(0, 1fr);
     flex-basis: 73%;
     min-height: 76px;
-    padding: 12px 5px 8px 4px;
+    padding: 12px 5px 8px 5px;
   }
 
   .fixed-phone-banner .fixed-mail {
@@ -487,7 +489,7 @@
   }
 
   .fixed-phone-banner .fixed-call .fixed-banner-body > strong {
-    font-size: 21px;
+    font-size: 23px;
   }
 
   .fixed-phone-banner .fixed-call small {
