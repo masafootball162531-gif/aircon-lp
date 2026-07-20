@@ -136,18 +136,3 @@ if (contactForm && formConfirmPanel && formConfirmList) {
     formConfirmPanel.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
-window.addEventListener("load", () => {
-  const fixedCtaBar = document.querySelector(".fixed-cta-bar");
-
-  if (!fixedCtaBar) return;
-
-  setTimeout(() => {
-    window.dispatchEvent(new Event("resize"));
-
-    fixedCtaBar.style.display = "none";
-
-    requestAnimationFrame(() => {
-      fixedCtaBar.style.display = "";
-    });
-  }, 300);
-});
