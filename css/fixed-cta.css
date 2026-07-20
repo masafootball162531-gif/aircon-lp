@@ -222,32 +222,61 @@
     0 2px 0 rgba(255, 255, 255, 0.25) inset,
     0 -8px 0 rgba(160, 0, 0, 0.14) inset,
     0 10px 24px rgba(175, 0, 0, 0.32);
+  animation: fixed-cta-button-float 1.45s ease-in-out infinite;
+  will-change: transform;
 }
 
-.fixed-call-badge,
-.fixed-mail-badge {
+.fixed-cta-bubble {
   position: absolute;
+  top: 8px;
+  left: 50%;
   z-index: 3;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 28px;
-  padding: 3px 10px 4px;
-  color: #fff200;
-  font-weight: 950;
-  line-height: 1;
-  white-space: nowrap;
   width: max-content;
+  max-width: calc(100% - 16px);
+  min-height: 30px;
+  padding: 4px 12px 5px;
+  color: #ffd000;
+  font-size: clamp(13px, 3.55vw, 16px);
+  font-weight: 950;
+  line-height: 1.15;
+  text-align: center;
+  white-space: nowrap;
   background: #003f91;
   border: 3px solid #071427;
   border-radius: 10px;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.22);
+  text-shadow:
+    0 2px 0 #001f54,
+    0 0 5px rgba(0, 0, 0, 0.32);
+  transform: translateX(-50%);
   isolation: isolate;
   pointer-events: none;
 }
 
-.fixed-call-badge::after,
-.fixed-mail-badge::after {
+.fixed-cta-count {
+  display: inline-block;
+  margin: 0 2px;
+  color: #ffffff;
+  font-size: 1.65em;
+  line-height: 0.75;
+  -webkit-text-stroke: 3px #ff0000;
+  paint-order: stroke fill;
+  text-shadow:
+    3px 0 0 #ff0000,
+    -3px 0 0 #ff0000,
+    0 3px 0 #ff0000,
+    0 -3px 0 #ff0000,
+    2px 2px 0 #ff0000,
+    -2px 2px 0 #ff0000,
+    2px -2px 0 #ff0000,
+    -2px -2px 0 #ff0000;
+  transform: translateY(1px);
+}
+
+.fixed-cta-bubble::after {
   position: absolute;
   bottom: -11px;
   left: 50%;
@@ -259,68 +288,6 @@
   border-right: 3px solid #071427;
   border-bottom: 3px solid #071427;
   transform: translateX(-50%) rotate(45deg);
-}
-
-.fixed-call-badge {
-  top: -45px;
-  left: 46%;
-  min-width: 166px;
-  font-size: clamp(13px, 3.2vw, 17px);
-  transform: translateX(-50%);
-}
-
-.fixed-mail-badge {
-  top: -34px;
-  left: 50%;
-  padding-right: 8px;
-  padding-left: 8px;
-  min-width: 92px;
-  max-width: calc(100vw - 18px);
-  font-size: clamp(11px, 2.7vw, 13px);
-  transform: translateX(-50%);
-}
-
-.fixed-call-badge strong,
-.fixed-mail-badge strong {
-  display: inline;
-  margin-right: 2px;
-  color: #ffffff;
-  font-size: 1.45em;
-  line-height: 0.8;
-  -webkit-text-stroke: 2px #ff0000;
-  paint-order: stroke fill;
-  text-shadow:
-    2px 0 0 #ff0000,
-    -2px 0 0 #ff0000,
-    0 2px 0 #ff0000,
-    0 -2px 0 #ff0000;
-}
-
-.fixed-call-badge strong {
-  color: #ffffff;
-  -webkit-text-stroke: 4px #ff0000;
-  text-shadow:
-    4px 0 0 #ff0000,
-    -4px 0 0 #ff0000,
-    0 4px 0 #ff0000,
-    0 -4px 0 #ff0000,
-    3px 3px 0 #ff0000,
-    -3px 3px 0 #ff0000,
-    3px -3px 0 #ff0000,
-    -3px -3px 0 #ff0000;
-}
-
-.fixed-mail-badge strong {
-  -webkit-text-stroke-width: 3px;
-  text-shadow:
-    3px 0 0 #ff0000,
-    -3px 0 0 #ff0000,
-    0 3px 0 #ff0000,
-    0 -3px 0 #ff0000,
-    2px 2px 0 #ff0000,
-    -2px 2px 0 #ff0000,
-    2px -2px 0 #ff0000,
-    -2px -2px 0 #ff0000;
 }
 
 .fixed-phone-banner .fixed-mail {
@@ -342,7 +309,28 @@
     0 2px 0 rgba(255, 255, 255, 0.35) inset,
     0 -7px 0 rgba(0, 98, 27, 0.18) inset,
     0 10px 22px rgba(0, 104, 32, 0.25);
+  animation: fixed-cta-button-float 1.45s ease-in-out infinite;
+  animation-delay: 0.16s;
+  will-change: transform;
   pointer-events: auto;
+}
+
+@keyframes fixed-cta-button-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fixed-phone-banner .fixed-call,
+  .fixed-phone-banner .fixed-mail {
+    animation: none;
+  }
 }
 
 .fixed-mail-icon {
@@ -448,20 +436,16 @@
     padding-left: 6px;
   }
 
-  .fixed-call-badge {
-    top: -44px;
-    left: 46%;
-    min-width: 142px;
-    font-size: 12px;
+  .fixed-cta-bubble {
+    top: 8px;
+    max-width: calc(100% - 12px);
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 11px;
   }
 
-  .fixed-mail-badge {
-    top: -33px;
-    left: 51%;
-    min-width: 82px;
-    padding-right: 5px;
-    padding-left: 5px;
-    font-size: 9px;
+  .fixed-cta-count {
+    font-size: 1.75em;
   }
 
   .fixed-phone-banner .fixed-call {
