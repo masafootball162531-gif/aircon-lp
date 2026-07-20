@@ -55,7 +55,7 @@ const fixedCtaTrigger = document.querySelector(
 if (fixedCtaBar && fixedCtaTrigger) {
   const updateFixedCtaVisibility = () => {
     const triggerTop = fixedCtaTrigger.getBoundingClientRect().top;
-    const shouldShow = triggerTop <= window.innerHeight;
+    const shouldShow = triggerTop <= window.innerHeight + 550;
 
     fixedCtaBar.classList.toggle("is-visible", shouldShow);
   };
