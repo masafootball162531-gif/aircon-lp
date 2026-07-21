@@ -1452,6 +1452,14 @@ body.is-service-modal-open {
   height: 104px;
 }
 
+.reason-text-card:first-child .reason-title-image {
+  height: 96px;
+}
+
+.reason-text-card:nth-child(4) .reason-title-image {
+  height: 82px;
+}
+
 .reason-answer-text {
   padding: 13px 14px 15px;
   background: #eef7ff;
@@ -1481,8 +1489,16 @@ body.is-service-modal-open {
     height: 100px;
   }
 
+  .reason-text-card:first-child .reason-title-image {
+    height: 86px;
+  }
+
   .reason-title-image-support {
     height: 94px;
+  }
+
+  .reason-text-card:nth-child(4) .reason-title-image {
+    height: 74px;
   }
 
   .reason-answer-text {
