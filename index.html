@@ -24,7 +24,7 @@
 <link rel="apple-touch-icon" href="./assets/favicon.webp">
  <link rel="preload" as="image" href="./assets/aircon-trouble-main.webp?v=2" fetchpriority="high">
 <link rel="preload" as="image" href="./assets/header-denki-tasukeru.webp">
-<link rel="preload" as="image" href="./assets/aircon-2027-warning-top3.webp">  <link rel="stylesheet" href="./css/styles.css?v=5">
+<link rel="preload" as="image" href="./assets/aircon-2027-warning-top3.webp">  <link rel="stylesheet" href="./css/styles.css?v=13">
 <link rel="stylesheet" href="./css/fixed-cta.css?v=10">
 </head>
 <body>
@@ -40,10 +40,20 @@
     <!-- End Google Tag Manager (noscript) -->
   <header class="site-header">
     <div class="header-image-wrap">
-      <img src="./assets/header-denki-tasukeru.webp" alt="エアコン修理・水漏れ・ガスチャージお任せ 電気のタスケル メールで相談する 050-5444-2277 ご相談無料 営業時間8:00〜20:00">
+      <img src="./assets/header-denki-tasukeru.webp" alt="エアコン修理・水漏れ・ガスチャージお任せ 電気のタスケル">
+      <span class="header-service-copy">エアコン修理・水漏れ・ガスチャージお任せ</span>
       <a class="header-logo-link" href="#top" aria-label="ページ上部へ戻る"></a>
-      <a class="header-mail-link mail-cta" href="#contact-form" aria-label="メールで問い合わせる"></a>
-      <a class="header-phone-link tel-cta" href="tel:05054442277" aria-label="050-5444-2277に電話する"></a>
+      <a class="header-mail-link mail-cta" href="#contact-form" aria-label="メールで問い合わせる">
+        <span class="header-mail-icon" aria-hidden="true"></span>
+        <span>メールで<br>相談</span>
+      </a>
+      <a class="header-phone-link tel-cta" href="tel:05054442277" aria-label="050-5444-2277に電話する">
+        <span class="header-phone-icon" aria-hidden="true">☎</span>
+        <span class="header-phone-text">
+          <strong>無料で電話相談</strong>
+          <small>365日年中無休で受付中!</small>
+        </span>
+      </a>
     </div>
   </header>
 
@@ -72,11 +82,11 @@
         <div class="fv-warning-accordion" aria-label="エアコン2027年問題の詳細">
           <details>
             <summary>エアコン2027年問題とは？</summary>
-            <p>2027年度を目安に省エネ基準が厳しくなることで、基準に対応した機種への切り替えや部品・施工費の上昇が想定されています。修理か交換か迷う場合は、早めの点検がおすすめです。</p>
+            <p>2027年度を目安に省エネ基準が厳しくなることで、古いエアコンは本体価格や部品代、施工費に影響が出る可能性があります。冷えない・動かないなどのエアコン故障やエアコン水漏れが起きた場合は、交換だけで判断せず、まずエアコン修理で直せるかを確認することが大切です。</p>
           </details>
           <details>
             <summary>エアコンの価格への影響は？</summary>
-            <p>機種・設置状況・部品の在庫状況により、本体価格や修理費用が変動する場合があります。作業前に見積りを確認し、納得してから依頼しましょう。</p>
+            <p>機種・設置状況・部品の在庫状況によって、エアコン修理の費用や交換費用が変動する場合があります。エアコン故障を放置すると、エアコン水漏れや冷房効率の低下につながることもあるため、早めに信頼できるエアコン修理業者へ相談し、作業前に見積りを確認してから依頼しましょう。</p>
           </details>
         </div>
 </div>
@@ -108,7 +118,13 @@
     </div>
 
     <section class="section case-image-section">
-      <img class="case-service-plan-image" src="assets/service-price-plan.webp" alt="サービス内容と料金プラン。基本料金1,980円から、修理トラブル、水漏れ、ガス補充・ガス漏れ、専用回路工事。">
+      <div class="service-plan-panel">
+        <img class="case-service-plan-image" src="assets/service-price-plan.webp" alt="サービス内容と料金プラン。基本料金1,980円から、修理トラブル、水漏れ、ガス補充・ガス漏れ、専用回路工事。">
+        <button class="service-plan-hotspot service-plan-hotspot-repair" type="button" data-service-modal-trigger data-service-key="repair" data-service-main-title="エアコン" data-service-title="修理トラブル" data-service-image="assets/case-aircon-01-cooling.png" aria-label="修理トラブルの料金詳細を見る"></button>
+        <button class="service-plan-hotspot service-plan-hotspot-water" type="button" data-service-modal-trigger data-service-key="water" data-service-main-title="エアコン" data-service-title="水漏れ" data-service-image="assets/case-aircon-02-water-leak.png" aria-label="水漏れの料金詳細を見る"></button>
+        <button class="service-plan-hotspot service-plan-hotspot-gas" type="button" data-service-modal-trigger data-service-key="gas" data-service-main-title="エアコン" data-service-title="ガス補充・ガス漏れ" data-service-image="assets/case-aircon-03-outdoor.png" aria-label="ガス補充・ガス漏れの料金詳細を見る"></button>
+        <button class="service-plan-hotspot service-plan-hotspot-circuit" type="button" data-service-modal-trigger data-service-key="circuit" data-service-main-title="エアコン" data-service-title="専用回路工事" data-service-image="assets/case-aircon-10-recheck.png" aria-label="専用回路工事の料金詳細を見る"></button>
+      </div>
     </section>
 <section class="section case-image-section">
   <img class="case-service-plan-image"
@@ -118,7 +134,15 @@
 
 
     <section class="section reason-image-section">
-      <img class="reason-electric-image" src="assets/other-electrical-services.webp" alt="その他電気工事もお任せ。ブレーカー、スイッチ、コンセント、照明器具、インターホン、アンテナ、業務用エアコンも相談可能。">
+      <div class="electrical-service-panel">
+        <img class="reason-electric-image" src="assets/other-electrical-services.webp" alt="その他電気工事もお任せ。ブレーカー、スイッチ、コンセント、照明器具、インターホン、アンテナ、業務用エアコンも相談可能。">
+        <button class="electrical-service-hotspot electrical-hotspot-breaker" type="button" data-service-modal-trigger data-service-key="breaker" data-service-main-title="電気工事" data-service-title="ブレーカー" data-service-image="assets/electrical-breaker-photo.png" aria-label="ブレーカーの料金詳細を見る"></button>
+        <button class="electrical-service-hotspot electrical-hotspot-switch" type="button" data-service-modal-trigger data-service-key="switch" data-service-main-title="電気工事" data-service-title="スイッチ" data-service-image="assets/electrical-switch-photo.png" aria-label="スイッチの料金詳細を見る"></button>
+        <button class="electrical-service-hotspot electrical-hotspot-outlet" type="button" data-service-modal-trigger data-service-key="outlet" data-service-main-title="電気工事" data-service-title="コンセント" data-service-image="assets/electrical-outlet-photo.png" aria-label="コンセントの料金詳細を見る"></button>
+        <button class="electrical-service-hotspot electrical-hotspot-lighting" type="button" data-service-modal-trigger data-service-key="lighting" data-service-main-title="電気工事" data-service-title="照明器具" data-service-image="assets/electrical-lighting-photo.png" aria-label="照明器具の料金詳細を見る"></button>
+        <button class="electrical-service-hotspot electrical-hotspot-intercom" type="button" data-service-modal-trigger data-service-key="intercom" data-service-main-title="電気工事" data-service-title="インターホン" data-service-image="assets/electrical-intercom-photo.png" aria-label="インターホンの料金詳細を見る"></button>
+        <button class="electrical-service-hotspot electrical-hotspot-antenna" type="button" data-service-modal-trigger data-service-key="antenna" data-service-main-title="電気工事" data-service-title="アンテナ" data-service-image="assets/electrical-antenna-photo.png" aria-label="アンテナの料金詳細を見る"></button>
+      </div>
     </section>
 
     <section class="warning-image-section">
@@ -131,20 +155,43 @@
        alt="電気のタスケルが選ばれる理由">
     </section>
 
-    <section class="speed-reason-image-section">
-      <img src="assets/reason-speed-arrival-nationwide.webp" alt="理由01 最短10分で到着、即日トラブル解決。全国対応。">
-    </section>
-
-    <section class="accounting-reason-image-section">
-      <img src="assets/reason-clear-accounting.webp" alt="理由02 地域密着型、安心の明朗会計。見積り時に事前に金額をお伝えします。">
-    </section>
-
-    <section class="achievement-reason-image-section">
-      <img src="assets/reason-annual-achievement.webp" alt="理由03 年間10,000件以上の実績。経験豊富なプロが対応します。">
-    </section>
-
-    <section class="support-reason-image-section">
-      <img src="assets/reason-support-manufacturers.png" alt="理由04 施工後も安心のサポート体制。どんなメーカーのエアコンにも対応。">
+    <section class="reason-text-section" aria-label="電気のタスケルが選ばれる理由">
+      <article class="reason-text-card">
+        <div class="reason-title-image">
+          <img src="assets/reason-speed-arrival-nationwide.webp" alt="REASON 01 最短10分で到着 即日トラブル解決">
+        </div>
+        <div class="reason-answer-text">
+          <p>急なエアコン故障も、<span class="reason-highlight">最短即日で現地確認</span>します。</p>
+          <p>冷えない・動かない・異音などの症状を確認し、<span class="reason-highlight">交換かエアコン修理か</span>を丁寧にご案内します。</p>
+        </div>
+      </article>
+      <article class="reason-text-card">
+        <div class="reason-title-image">
+          <img src="assets/reason-clear-accounting.webp" alt="REASON 02 地域密着型 安心の明朗会計">
+        </div>
+        <div class="reason-answer-text">
+          <p>エアコン修理業者選びで不安な料金も、<span class="reason-highlight">作業前にわかりやすく説明</span>します。</p>
+          <p><span class="reason-highlight">見積りをご確認いただいてから</span>進めるため、初めての方も安心してご相談いただけます。</p>
+        </div>
+      </article>
+      <article class="reason-text-card">
+        <div class="reason-title-image">
+          <img src="assets/reason-annual-achievement.webp" alt="REASON 03 年間70,000件以上の実績">
+        </div>
+        <div class="reason-answer-text">
+          <p><span class="reason-highlight">エアコン水漏れ、ガス不足、室外機トラブル</span>まで幅広く対応します。</p>
+          <p>原因を見極め、<span class="reason-highlight">必要なエアコン修理</span>をその場でご提案します。</p>
+        </div>
+      </article>
+      <article class="reason-text-card">
+        <div class="reason-title-image reason-title-image-support">
+          <img src="assets/reason-support-manufacturers.png" alt="REASON 04 施工後も安心のサポート体制">
+        </div>
+        <div class="reason-answer-text">
+          <p><span class="reason-highlight">メーカーや年式がわからないエアコン故障</span>もご相談ください。</p>
+          <p>修理・交換の目安から施工後の不安まで、<span class="reason-highlight">エアコン修理業者として寄り添います</span>。</p>
+        </div>
+      </article>
     </section>
 
     <section class="comparison-heading-image-section">
@@ -238,6 +285,478 @@
       </div>
     </section>
 
+    <!-- Construction cases -->
+    <section class="section case-study-section" aria-label="エアコン修理の施工事例">
+      <div class="section-head">
+        <h2>施工事例</h2>
+        <span class="section-sub">エアコン修理・エアコン故障・エアコン水漏れなど、実際にご相談の多い症状別に対応例をご紹介します。</span>
+      </div>
+      <div class="case-study-list is-limited" id="caseStudyList">
+        <article class="case-study-card">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エアコンが冷えない</h3>
+          </div>
+          <figure class="case-study-visual case-image-cooling">
+            <img src="assets/case-aircon-01-cooling.png" alt="冷たい風が出ないエアコンを点検する施工事例写真" loading="lazy">
+            <figcaption>冷房不良の点検・修理</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン修理</li>
+            <li>#エアコン故障</li>
+            <li>#冷えない</li>
+            <li>#ガス点検</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>東京都 世田谷区 A様</strong>
+            <span>料金 18,700円</span>
+          </div>
+          <p class="case-study-body">冷房をつけてもぬるい風しか出ないとのご相談でした。室内機と室外機を確認し、ガス不足と内部の汚れが原因と判断。必要なエアコン修理を行い、冷房の効きが改善しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エアコンから水が漏れる</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-water-leak">
+            <img src="assets/case-aircon-02-water-leak.png" alt="エアコン水漏れの原因を調査する施工事例写真" loading="lazy">
+            <figcaption>水漏れ原因の調査</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン水漏れ</li>
+            <li>#ドレン詰まり</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>神奈川県 横浜市 B様</strong>
+            <span>料金 12,100円</span>
+          </div>
+          <p class="case-study-body">室内機からポタポタと水が落ちるエアコン水漏れのご相談でした。ドレンホースの詰まりを確認し、洗浄と排水確認を実施。床や壁への被害が広がる前に対応しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>室外機が動かない</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-outdoor">
+            <img src="assets/case-aircon-03-outdoor.png" alt="室外機トラブルを点検する施工事例写真" loading="lazy">
+            <figcaption>室外機トラブル対応</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#室外機故障</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>千葉県 船橋市 C様</strong>
+            <span>料金 22,000円</span>
+          </div>
+          <p class="case-study-body">室内機は動くのに冷風が出ない状態でした。エアコン修理業者として室外機の電源系統と部品を確認し、不具合箇所を調整。運転確認まで行いました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エアコンから異音がする</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-noise">
+            <img src="assets/case-aircon-04-noise.png" alt="エアコンの異音を確認する施工事例写真" loading="lazy">
+            <figcaption>異音・振動の確認</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#異音</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>埼玉県 さいたま市 D様</strong>
+            <span>料金 16,500円</span>
+          </div>
+          <p class="case-study-body">運転中にカタカタ音がするとのご依頼でした。ファン周辺の状態を確認し、部品の緩みと内部の異物を調整。エアコン故障につながる前に点検と修理を行いました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>風が弱く部屋が冷えない</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-weak-wind">
+            <img src="assets/case-aircon-05-weak-wind.png" alt="エアコンの風量低下を点検する施工事例写真" loading="lazy">
+            <figcaption>風量低下の改善</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#風が弱い</li>
+            <li>#エアコン修理</li>
+            <li>#冷房不良</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>大阪府 大阪市 E様</strong>
+            <span>料金 14,300円</span>
+          </div>
+          <p class="case-study-body">風量が弱く、設定温度を下げても涼しくならない症状でした。フィルターと内部の詰まりを確認し、必要箇所を整備。エアコン修理後は風量と冷え方が安定しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エラー表示が出る</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-error">
+            <img src="assets/case-aircon-06-error.png" alt="エアコンのエラー表示を診断する施工事例写真" loading="lazy">
+            <figcaption>エラーコード診断</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エラー表示</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>愛知県 名古屋市 F様</strong>
+            <span>料金 19,800円</span>
+          </div>
+          <p class="case-study-body">本体ランプが点滅し、エラー表示で停止する状態でした。型番とエラー内容を確認し、センサー周辺を点検。原因を説明したうえで、必要なエアコン修理を行いました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>冷房が途中で止まる</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-stop">
+            <img src="assets/case-aircon-07-stop.png" alt="冷房が途中で止まる症状を点検する施工事例写真" loading="lazy">
+            <figcaption>停止トラブルの修理</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#途中で止まる</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>福岡県 福岡市 G様</strong>
+            <span>料金 21,600円</span>
+          </div>
+          <p class="case-study-body">しばらく運転すると冷房が止まるとのご相談でした。室外機まわりの放熱状況と排水経路を点検し、負荷がかかっている箇所を整備。再発しにくい使い方もご案内しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>古いエアコンを修理したい</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-old-aircon">
+            <img src="assets/case-aircon-08-old.png" alt="古いエアコンを点検する施工事例写真" loading="lazy">
+            <figcaption>年式確認と修理判断</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#古いエアコン</li>
+            <li>#エアコン修理</li>
+            <li>#修理か交換</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>兵庫県 神戸市 H様</strong>
+            <span>料金 24,200円</span>
+          </div>
+          <p class="case-study-body">年式が古く、メーカー修理が難しいと言われたエアコン故障のご相談でした。部品状況と本体状態を確認し、修理可能な範囲と交換した場合の目安を丁寧にご説明しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>業務用エアコンの水漏れ</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-business">
+            <img src="assets/case-aircon-09-business.png" alt="業務用エアコンの水漏れを点検する施工事例写真" loading="lazy">
+            <figcaption>店舗エアコンの応急対応</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#業務用エアコン</li>
+            <li>#エアコン水漏れ</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>東京都 新宿区 店舗 I様</strong>
+            <span>料金 33,000円</span>
+          </div>
+          <p class="case-study-body">店舗営業中に天井付近から水が落ちるエアコン水漏れのご相談でした。ドレンポンプと排水経路を確認し、応急処置と再点検を実施。営業への影響を抑えて対応しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>他社で断られたエアコン故障</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-recheck">
+            <img src="assets/case-aircon-10-recheck.png" alt="他社で断られたエアコン故障を再点検する施工事例写真" loading="lazy">
+            <figcaption>再点検と対応方法の提案</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン故障</li>
+            <li>#エアコン修理</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>京都府 京都市 J様</strong>
+            <span>料金 27,500円</span>
+          </div>
+          <p class="case-study-body">他社で修理が難しいと言われたエアコンについてご相談いただきました。設置状況、部品の状態、エアコン水漏れの有無まで確認し、現場でできる修理内容をご提案しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エアコンのガス不足</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-cooling">
+            <img src="assets/case-aircon-01-cooling.png" alt="エアコンのガス不足を点検する施工事例写真" loading="lazy">
+            <figcaption>ガス不足の点検・補修</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン修理</li>
+            <li>#ガス不足</li>
+            <li>#冷えない</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>東京都 練馬区 K様</strong>
+            <span>料金 17,600円</span>
+          </div>
+          <p class="case-study-body">冷房の効きが悪く、設定温度を下げても部屋が涼しくならないとのご相談でした。配管まわりと室外機を確認し、ガス不足が疑われる状態を点検。エアコン修理業者として作業内容を説明したうえで対応しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>リモコンを押しても反応しない</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-error">
+            <img src="assets/case-aircon-06-error.png" alt="リモコンに反応しないエアコンを診断する施工事例写真" loading="lazy">
+            <figcaption>操作不良の診断</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン故障</li>
+            <li>#リモコン不良</li>
+            <li>#エアコン修理</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>神奈川県 藤沢市 L様</strong>
+            <span>料金 13,200円</span>
+          </div>
+          <p class="case-study-body">リモコンを操作しても本体が反応しないエアコン故障のご相談でした。リモコン側と本体受信部の状態を確認し、電源まわりも点検。交換が必要な場合とエアコン修理で改善できる場合を分かりやすくご案内しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エアコンをつけるとブレーカーが落ちる</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-recheck">
+            <img src="assets/case-aircon-10-recheck.png" alt="ブレーカーが落ちるエアコンを点検する施工事例写真" loading="lazy">
+            <figcaption>電源まわりの点検</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#ブレーカー</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>千葉県 柏市 M様</strong>
+            <span>料金 20,900円</span>
+          </div>
+          <p class="case-study-body">エアコンを起動するとブレーカーが落ちてしまう症状でした。専用回路、コンセント、室外機側の負荷を確認し、危険な状態で使い続けないようご説明。必要な点検とエアコン修理の範囲をご案内しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>エアコンからにおいがする</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-noise">
+            <img src="assets/case-aircon-04-noise.png" alt="エアコンのにおいを点検する施工事例写真" loading="lazy">
+            <figcaption>異臭・内部汚れの確認</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン修理</li>
+            <li>#異臭</li>
+            <li>#内部点検</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>埼玉県 川口市 N様</strong>
+            <span>料金 15,400円</span>
+          </div>
+          <p class="case-study-body">運転するとカビのようなにおいがするとのご相談でした。フィルター、送風ファン、排水経路を確認し、エアコン水漏れや内部汚れにつながる箇所も点検。症状に合わせて清掃と修理の目安をご案内しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>室外機から大きな音がする</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-outdoor">
+            <img src="assets/case-aircon-03-outdoor.png" alt="室外機の異音を点検する施工事例写真" loading="lazy">
+            <figcaption>室外機異音の点検</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#室外機異音</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>大阪府 堺市 O様</strong>
+            <span>料金 18,900円</span>
+          </div>
+          <p class="case-study-body">室外機から振動音が大きくなったとのご依頼でした。設置台、ファン周辺、配管まわりを確認し、エアコン故障につながる可能性のある箇所を点検。必要な調整と修理内容をご提案しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>冷房中に水が飛んでくる</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-water-leak">
+            <img src="assets/case-aircon-02-water-leak.png" alt="冷房中に水が飛ぶエアコンを点検する施工事例写真" loading="lazy">
+            <figcaption>水飛び・排水不良の確認</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン水漏れ</li>
+            <li>#水飛び</li>
+            <li>#ドレン点検</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>愛知県 岡崎市 P様</strong>
+            <span>料金 13,750円</span>
+          </div>
+          <p class="case-study-body">冷房中に吹き出し口から水が飛ぶエアコン水漏れのご相談でした。内部結露、フィルター汚れ、排水の詰まりを確認し、原因に合わせて整備。再発防止のためのお手入れ方法もご案内しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>取り付け後から冷えが弱い</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-stop">
+            <img src="assets/case-aircon-07-stop.png" alt="取り付け後に冷えが弱いエアコンを点検する施工事例写真" loading="lazy">
+            <figcaption>設置状態の再点検</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#取り付け後不具合</li>
+            <li>#エアコン修理業者</li>
+            <li>#冷えない</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>兵庫県 西宮市 Q様</strong>
+            <span>料金 23,100円</span>
+          </div>
+          <p class="case-study-body">取り付け後から冷えが弱いとのご相談でした。配管接続、室外機の設置環境、排水経路を確認し、施工状態を再点検。エアコン修理業者として、設置由来の不具合か本体故障かを切り分けました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>ドレンホースが詰まっている</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-water-leak">
+            <img src="assets/case-aircon-02-water-leak.png" alt="ドレンホース詰まりを確認する施工事例写真" loading="lazy">
+            <figcaption>ドレン詰まりの清掃</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#ドレンホース</li>
+            <li>#エアコン水漏れ</li>
+            <li>#エアコン修理</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>福岡県 北九州市 R様</strong>
+            <span>料金 11,000円</span>
+          </div>
+          <p class="case-study-body">室内機の下に水が落ち、ドレンホースの詰まりが疑われる状態でした。排水経路を確認し、詰まりの除去と通水確認を実施。エアコン水漏れを放置した場合の注意点もお伝えしました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>業務用エアコンが冷えない</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-business">
+            <img src="assets/case-aircon-09-business.png" alt="業務用エアコンが冷えない症状を点検する施工事例写真" loading="lazy">
+            <figcaption>店舗空調の冷房不良対応</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#業務用エアコン</li>
+            <li>#エアコン故障</li>
+            <li>#エアコン修理業者</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>東京都 渋谷区 店舗 S様</strong>
+            <span>料金 38,500円</span>
+          </div>
+          <p class="case-study-body">店舗の業務用エアコンが冷えず、営業中の室温が上がってしまうとのご相談でした。フィルター、室外機、排水経路を点検し、エアコン故障の原因を確認。営業への影響を抑える形で対応しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+
+        <article class="case-study-card is-collapsible">
+          <div class="case-study-header">
+            <span class="case-study-mark" aria-hidden="true"></span>
+            <h3>引っ越し後にエアコンが動かない</h3>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-label="施工事例を開く"></button>
+          </div>
+          <figure class="case-study-visual case-image-old-aircon">
+            <img src="assets/case-aircon-08-old.png" alt="引っ越し後に動かないエアコンを点検する施工事例写真" loading="lazy">
+            <figcaption>移設後トラブルの確認</figcaption>
+          </figure>
+          <ul class="case-study-tags" aria-label="対応内容">
+            <li>#エアコン故障</li>
+            <li>#移設後不具合</li>
+            <li>#エアコン修理</li>
+          </ul>
+          <div class="case-study-meta">
+            <strong>京都府 宇治市 T様</strong>
+            <span>料金 26,400円</span>
+          </div>
+          <p class="case-study-body">引っ越し後にエアコンが動かなくなったとのご相談でした。電源、配管、室外機の接続状態を確認し、移設時の影響がないかを点検。修理で改善できる範囲と交換判断の目安をご案内しました。</p>
+          <p class="case-study-note">※お住まいや故障具合等で施工金額は異なります。現場調査の上、お見積りさせていただきます。</p>
+        </article>
+        <div class="case-study-more">
+          <button class="case-study-more-button" type="button" aria-controls="caseStudyList" aria-expanded="false">20件すべて見る</button>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section class="section faq">
       <div class="section-head">
@@ -246,28 +765,44 @@
       </div>
       <div class="faq-list">
         <details open>
-          <summary>見積りだけでも可能ですか？</summary>
-          <p>可能です。現地確認後、作業前に料金をご提示します。</p>
+          <summary>エアコン修理の見積りだけでも依頼できますか？</summary>
+          <p>はい、可能です。エアコン故障の原因は、ガス不足・基板不良・室外機トラブル・エアコン水漏れなど状況によって異なります。現地で状態を確認したうえで、エアコン修理に必要な作業内容と料金を作業前にご案内します。</p>
         </details>
         <details>
-          <summary>当日修理できますか？</summary>
-          <p>エリア・予約状況により可能です。まずはお電話ください。</p>
+          <summary>エアコン故障は当日中に修理できますか？</summary>
+          <p>エリアや予約状況、部品の在庫状況によって異なりますが、最短即日でのエアコン修理に対応しています。冷えない、動かない、異音がするなど急なエアコン故障でお困りの場合は、早めにご相談ください。</p>
         </details>
         <details>
-          <summary>古いエアコンでも対応できますか？</summary>
-          <p>状態や部品の有無により異なりますが、まずは現地で確認可能です。</p>
+          <summary>エアコン水漏れだけでも修理を頼めますか？</summary>
+          <p>はい、エアコン水漏れのみのご相談も可能です。ドレンホースの詰まり、内部の汚れ、設置不良、部品劣化など原因を確認し、必要なエアコン修理をご提案します。水漏れを放置すると壁や床の傷みにつながる場合があります。</p>
         </details>
         <details>
-          <summary>メーカーが分からなくても大丈夫ですか？</summary>
-          <p>はい、現地で確認可能です。</p>
+          <summary>どんなエアコン修理業者を選べばよいですか？</summary>
+          <p>エアコン修理業者を選ぶ際は、作業前に見積りを提示するか、エアコン故障の原因を説明してくれるか、エアコン水漏れや冷房不良など幅広い症状に対応できるかを確認することが大切です。当サービスでは、現地確認後に作業内容と費用をご案内します。</p>
         </details>
         <details>
-          <summary>修理と交換どちらがよいか相談できますか？</summary>
-          <p>可能です。状態を確認したうえで、修理・交換の目安をご案内します。</p>
+          <summary>冷えないエアコンは修理と交換どちらがよいですか？</summary>
+          <p>冷えない症状は、ガス不足、フィルターや内部の汚れ、室外機の不具合、部品の故障など複数の原因が考えられます。現地でエアコン故障の状態を確認し、エアコン修理で改善できるか、交換を検討した方がよいかをわかりやすくご案内します。</p>
         </details>
         <details>
-          <summary>メーカー公式の修理窓口ですか？</summary>
-          <p>メーカー公式窓口ではありません。エアコン修理専門サービスです。</p>
+          <summary>古いエアコンでも修理できますか？</summary>
+          <p>古いエアコンでも、状態や部品の有無によってはエアコン修理が可能です。年式が古い場合は部品供給が終了していることもあるため、エアコン修理業者として現地で状態を確認し、修理可能か、交換が必要かを判断します。</p>
+        </details>
+        <details>
+          <summary>メーカーや型番が分からなくても相談できますか？</summary>
+          <p>はい、メーカーや型番が分からない場合でもご相談ください。現地でエアコン本体や室外機を確認し、エアコン故障の症状や設置状況を見ながら対応方法をご案内します。エアコン水漏れや冷房不良など、症状から原因を探ることも可能です。</p>
+        </details>
+        <details>
+          <summary>エアコン修理の料金はいつ分かりますか？</summary>
+          <p>料金は、現地確認後、作業前にお伝えします。エアコン故障の原因や必要な部品、エアコン水漏れの詰まり具合などによって修理内容が変わるため、事前確認を行ったうえで見積りをご案内します。内容にご納得いただいてから作業します。</p>
+        </details>
+        <details>
+          <summary>他社で断られたエアコン故障も相談できますか？</summary>
+          <p>はい、他のエアコン修理業者で対応が難しいと言われた場合でもご相談ください。設置状況、年式、部品の有無、エアコン水漏れや室外機トラブルの状態を確認し、可能な範囲でエアコン修理の方法をご提案します。</p>
+        </details>
+        <details>
+          <summary>メーカー公式のエアコン修理業者ですか？</summary>
+          <p>メーカー公式窓口ではありません。エアコン修理専門サービスとして、冷えない、動かない、エアコン水漏れ、異音、室外機トラブルなど幅広いエアコン故障の相談を受け付けています。メーカーが分からない場合もお気軽にご相談ください。</p>
         </details>
       </div>
     </section>
@@ -312,6 +847,52 @@
     </div>
   </footer>
 
+  <div class="service-price-modal" id="servicePriceModal" role="dialog" aria-modal="true" aria-labelledby="servicePriceModalTitle" hidden>
+    <button class="service-price-modal-backdrop" type="button" data-service-modal-close aria-label="料金詳細を閉じる"></button>
+    <div class="service-price-modal-card">
+      <button class="service-price-modal-close" type="button" data-service-modal-close aria-label="料金詳細を閉じる">×</button>
+      <figure class="service-price-modal-visual">
+        <div class="service-price-modal-titlebar">
+          <h2 id="servicePriceModalTitle">エアコン</h2>
+          <span id="servicePriceModalSub">修理トラブル</span>
+        </div>
+        <img id="servicePriceModalImage" src="assets/case-aircon-01-cooling.png" alt="エアコン修理の料金詳細イメージ">
+      </figure>
+      <div class="service-price-modal-body">
+        <dl class="service-price-menu" id="servicePriceModalMenu">
+          <div>
+            <dt>エアコンの修理</dt>
+            <dd>3,300円〜</dd>
+          </div>
+          <div>
+            <dt>エアコンの故障</dt>
+            <dd>3,300円〜</dd>
+          </div>
+          <div>
+            <dt>エアコンからの水漏れ</dt>
+            <dd>3,300円〜</dd>
+          </div>
+          <div>
+            <dt>エアコンガスチャージ</dt>
+            <dd>3,300円〜</dd>
+          </div>
+          <div>
+            <dt>業務用エアコンの修理</dt>
+            <dd>3,300円〜</dd>
+          </div>
+          <div>
+            <dt>室外機の修理</dt>
+            <dd>3,300円〜</dd>
+          </div>
+        </dl>
+        <a class="service-price-modal-call tel-cta" href="tel:05054442277" aria-label="050-5444-2277に電話する">
+          <span>電気トラブルを一発解決!</span>
+          <strong>050-5444-2277</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <nav class="fixed-cta-bar fixed-phone-banner" aria-label="固定お問い合わせ">
     <span class="fixed-cta-bubble">直近1週間で<span class="fixed-cta-count">968</span>名様にお申し込み頂きました！</span>
     <a class="fixed-call tel-cta fixed-cta" href="tel:05054442277" aria-label="無料で電話相談する">
@@ -330,6 +911,6 @@
     <a class="fixed-line line-cta fixed-cta fixed-line-hidden" href="https://line.me/R/ti/p/@example" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">LINEで相談</a>
   </nav>
 
- <script src="./js/script.js?v=5"></script>
+ <script src="./js/script.js?v=9"></script>
 </body>
 </html>
