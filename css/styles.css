@@ -1437,6 +1437,7 @@ body.is-service-modal-open {
 }
 
 .reason-title-image {
+  position: relative;
   height: 112px;
   overflow: hidden;
   background: var(--white);
@@ -1449,15 +1450,7 @@ body.is-service-modal-open {
 }
 
 .reason-title-image-support {
-  height: 104px;
-}
-
-.reason-text-card:first-child .reason-title-image {
-  height: 96px;
-}
-
-.reason-text-card:nth-child(4) .reason-title-image {
-  height: 82px;
+  height: 112px;
 }
 
 .reason-answer-text {
@@ -1490,15 +1483,11 @@ body.is-service-modal-open {
   }
 
   .reason-text-card:first-child .reason-title-image {
-    height: 86px;
+    height: 100px;
   }
 
   .reason-title-image-support {
-    height: 94px;
-  }
-
-  .reason-text-card:nth-child(4) .reason-title-image {
-    height: 74px;
+    height: 100px;
   }
 
   .reason-answer-text {
