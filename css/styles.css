@@ -96,18 +96,6 @@ height: 80px;
   background: var(--white);
 }
 
-.header-image-wrap::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 58%;
-  height: 80px;
-  content: "";
-  background: var(--white);
-  pointer-events: none;
-}
-
 .header-image-wrap img {
   position: relative;
   z-index: 0;
@@ -118,7 +106,6 @@ height: 80px;
 
 .header-image-wrap img {
   display: block;
-  object-fit: contain;
 }
 
 .header-logo-link,
@@ -138,9 +125,9 @@ height: 80px;
 
 .header-service-copy {
   position: absolute;
-  top: 6px;
+  top: 10px;
   left: 1.6%;
-  z-index: 5;
+  z-index: 3;
   display: block;
   width: 39%;
   max-width: 166px;
@@ -152,7 +139,6 @@ height: 80px;
   line-height: 1.08;
   white-space: nowrap;
   text-align: left;
-  transform-origin: left center;
   cursor: text;
   pointer-events: auto;
   user-select: text;
@@ -279,7 +265,7 @@ height: 80px;
 
 @media (max-width: 374px) {
   .header-service-copy {
-    top: 6px;
+    top: 9px;
     left: 1.4%;
     width: 39%;
     font-size: 5.8px;
