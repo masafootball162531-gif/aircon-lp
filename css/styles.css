@@ -138,19 +138,21 @@ height: 80px;
 
 .header-service-copy {
   position: absolute;
-  top: 8px;
-  left: 0.5%;
+  top: 6px;
+  left: 1.6%;
   z-index: 5;
   display: block;
-  width: 40%;
-  padding: 1px 2px 2px;
+  width: 39%;
+  max-width: 166px;
+  padding: 1px 4px 2px 0;
   color: #111111;
   background: var(--white);
-  font-size: 8px;
+  font-size: 6.8px;
   font-weight: 950;
-  line-height: 1.15;
+  line-height: 1.08;
   white-space: nowrap;
   text-align: left;
+  transform-origin: left center;
   cursor: text;
   pointer-events: auto;
   user-select: text;
@@ -276,6 +278,13 @@ height: 80px;
 }
 
 @media (max-width: 374px) {
+  .header-service-copy {
+    top: 6px;
+    left: 1.4%;
+    width: 39%;
+    font-size: 5.8px;
+  }
+
   .site-header .header-mail-link {
     left: 42.5%;
     height: 56px;
