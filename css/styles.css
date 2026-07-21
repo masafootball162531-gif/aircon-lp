@@ -1453,6 +1453,25 @@ body.is-service-modal-open {
   height: 112px;
 }
 
+.reason-text-card:first-child .reason-title-image::after,
+.reason-text-card:nth-child(4) .reason-title-image::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--white);
+  pointer-events: none;
+}
+
+.reason-text-card:first-child .reason-title-image::after {
+  height: 25px;
+}
+
+.reason-text-card:nth-child(4) .reason-title-image::after {
+  height: 35px;
+}
+
 .reason-answer-text {
   padding: 13px 14px 15px;
   background: #eef7ff;
