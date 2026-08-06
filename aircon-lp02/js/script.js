@@ -381,18 +381,6 @@ if (exitPopup) {
     exitPopupLastTrigger?.focus?.();
   };
 
-  const handleDesktopExit = (event) => {
-    const isLeavingViewport = !event.relatedTarget && event.clientY <= 32;
-
-    if (isLeavingViewport) {
-      openExitPopup();
-    }
-  };
-
-  document.addEventListener("mouseout", handleDesktopExit);
-  document.documentElement.addEventListener("mouseleave", handleDesktopExit);
-  window.addEventListener("blur", () => openExitPopup());
-
   let backPopupShown = false;
 
   try {
@@ -415,47 +403,6 @@ if (exitPopup) {
   } catch {
     // Some embedded browsers restrict history manipulation.
   }
-
-  document.addEventListener("click", (event) => {
-    const link = event.target.closest("a[href]");
-
-    if (!link || link.closest("#exitPopup")) return;
-
-    const href = link.getAttribute("href") || "";
-    const isConversionLink =
-      link.classList.contains("tel-cta") ||
-      link.classList.contains("mail-cta") ||
-      href.startsWith("tel:") ||
-      href.startsWith("mailto:") ||
-      href.startsWith("#");
-
-    if (isConversionLink || allowExitNavigation) return;
-
-    event.preventDefault();
-    openExitPopup(link, { force: true });
-  });
-
-  let mobileExitTimer = null;
-
-  const scheduleMobileExitPopup = () => {
-    const isMobileWidth = window.matchMedia("(max-width: 768px)").matches;
-
-    if (!isMobileWidth || window.scrollY < 360 || mobileExitTimer) return;
-
-    mobileExitTimer = window.setTimeout(() => {
-      openExitPopup();
-    }, 3500);
-  };
-
-  window.addEventListener("scroll", scheduleMobileExitPopup, { passive: true });
-
-  window.setTimeout(() => {
-    const isMobileWidth = window.matchMedia("(max-width: 768px)").matches;
-
-    if (isMobileWidth && window.scrollY > 160) {
-      openExitPopup();
-    }
-  }, 8000);
 
   exitPopupCloseButtons.forEach((button) => {
     button.addEventListener("click", closeExitPopup);
