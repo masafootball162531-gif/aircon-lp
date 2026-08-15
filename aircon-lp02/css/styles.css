@@ -1367,6 +1367,11 @@ body.is-service-modal-open {
   cursor: pointer;
 }
 
+.exit-popup-close:focus,
+.exit-popup-close:focus-visible {
+  outline: 0;
+}
+
 .exit-popup-image {
   display: block;
   width: 100%;
@@ -1376,11 +1381,11 @@ body.is-service-modal-open {
 
 .exit-popup-tel-hotspot {
   position: absolute;
-  left: 5.8%;
-  right: 5.8%;
-  bottom: 10%;
+  left: 5.2%;
+  right: 5.2%;
+  bottom: 3.2%;
   z-index: 1;
-  height: 13.3%;
+  height: 10.5%;
   border-radius: 999px;
   outline-offset: 3px;
 }
